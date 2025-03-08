@@ -1,0 +1,25 @@
+{
+  "name": "example-basic",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev --port 4321",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version"
+  },
+  "dependencies": {
+    "@solid-primitives/scroll": "^2.1.0",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.0",
+    "@solidjs/start": "^1.1.0",
+    "@vinxi/plugin-mdx": "^3.7.2",
+    "gray-matter": "^4.0.3",
+    "slugify": "^1.6.6",
+    "solid-js": "^1.9.5",
+    "solid-mdx": "^0.0.7",
+    "vinxi": "^0.5.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

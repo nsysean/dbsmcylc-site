@@ -1,0 +1,51 @@
+.p3 {
+  .hero {
+    background-image: url("/404-hero.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .frame1 {
+    min-height: 415px;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.34);
+  }
+
+  .frame2 {
+    padding-inline: 75px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: white;
+
+    .frame2-title {
+      font-size: 35px;
+      margin-bottom: 5px;
+    }
+
+    .frame2-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      min-width: 50%;
+      max-width: 700px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .hero {
+      display: block;
+      height: fit-content;
+    }
+
+    .frame1 {
+      min-height: 458px;
+    }
+
+    .frame2 {
+      padding-inline: 25px;
+    }
+  }
+}

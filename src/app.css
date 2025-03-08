@@ -1,0 +1,19 @@
+@import url("/src/fonts.css");
+
+:root {
+  --color-mc: #f8485e;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  font-family: "Figtree";
+  background-color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

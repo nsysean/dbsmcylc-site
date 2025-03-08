@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../public/Figtree/Figtree-VariableFont_wght.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../public/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "madefor-text";
+  src: url("../public/Wix_Madefor_Text/WixMadeforText-VariableFont_wght.ttf");
+  font-display: swap;
+}

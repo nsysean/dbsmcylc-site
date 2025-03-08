@@ -1,0 +1,211 @@
+.p1 {
+  background-color: #fff;
+
+  .hero {
+    background-image: url("/home-hero.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frame1 {
+    min-height: 515px;
+    position: relative;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.34);
+
+    .frame1-text {
+      position: absolute;
+      left: 75px;
+      bottom: 30px;
+      font-size: 60px;
+      color: white;
+    }
+
+    .frame1-text .highlight {
+      background-color: var(--color-mc);
+    }
+  }
+
+  .frame2 {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 75px;
+    padding-block: 30px;
+    color: white;
+
+    .frame2-title {
+      color: #c5c5c5;
+    }
+
+    .frame2-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .frame2-text span {
+      font-size: 20px;
+      text-align: end;
+    }
+
+    .frame2-btn {
+      font-size: 18px;
+      margin-left: auto;
+      border: 1px solid white;
+      border-radius: 4px;
+      width: fit-content;
+      padding-inline: 20px;
+      padding-block: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 75px;
+    padding-block: 60px;
+  }
+
+  .card {
+    .card-title {
+      font-size: 45px;
+    }
+  }
+
+  /**/
+  .works > * {
+    flex: 1 1 var(--min);
+    padding-block: 20px;
+  }
+  /**/
+
+  .works {
+    /**/
+    --min: 300px;
+    --gap: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    /**/
+    padding-inline: 75px;
+
+    .works-wrapper {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .works-title {
+      font-size: 35px;
+      padding-bottom: 10px;
+    }
+
+    .works-desc {
+      padding-right: 20px;
+    }
+
+    .works-link {
+      text-decoration: underline;
+    }
+
+    .work {
+      .work-title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-block: 5px;
+      }
+
+      .work-thumbnail {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .preview {
+    padding-block: 40px;
+    padding-inline: 75px;
+    padding-bottom: 60px;
+
+    .preview-wrapper {
+      padding: 5px;
+      background-color: var(--color-mc);
+    }
+
+    .preview-bg {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 400px;
+      position: relative;
+    }
+
+    .preview-info {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      padding: 20px;
+    }
+
+    .preview-title {
+        font-family: "DM Serif Display";
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .hero {
+      display: block;
+      height: fit-content;
+    }
+
+    .frame1 {
+      min-height: 0px;
+
+      .frame1-text {
+        font-size: 40px;
+        position: static;
+        text-align: center;
+        padding-block: 50px;
+        padding-top: calc(64px + 50px * 4);
+      }
+    }
+
+    .frame2 {
+      display: block;
+      padding-inline: 25px;
+
+      .frame2-text span {
+        text-align: start;
+        padding-block: 20px;
+      }
+
+      .frame2-btn {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+
+    .cards {
+      display: block;
+      padding-block: 30px;
+    }
+
+    .card {
+      text-align: center;
+      padding-block: 30px;
+    }
+
+    .preview {
+      padding-inline: 25px;
+    }
+  }
+}
