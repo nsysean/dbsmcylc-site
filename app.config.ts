@@ -15,6 +15,7 @@ export default defineConfig({
   },
   ssr: true,
   extensions: ["mdx", "md"],
+  /*
   server: {
     preset: "cloudflare-pages",
     // We will need to enable CF Pages node compatiblity
@@ -23,4 +24,5 @@ export default defineConfig({
       external: ["__STATIC_CONTENT_MANIFEST", "node:async_hooks"],
     },
   },
+  */
 });
