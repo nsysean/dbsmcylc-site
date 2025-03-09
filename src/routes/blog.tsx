@@ -74,12 +74,15 @@ export default function BlogLayout(props: RouteSectionProps) {
           property="og:image:alt"
           content={blog()?.title + " | Blog | DBS Mother's Choice"}
         />
+        <Meta name="twitter:card" content="summary_large_image" />
         <Meta property="og:site_name" content="DBS Mother's Choice" />
         <main class="p4">
-          <div
-            class="hero"
-          >
-            <ResponsiveImage class="hero-bg" alt="blog hero" src={blog()?.image} />
+          <div class="hero">
+            <ResponsiveImage
+              class="hero-bg"
+              alt="blog hero"
+              src={blog()?.image}
+            />
             <div class="frame1"></div>
             <div class="frame2">
               <div class="frame2-title">{blog()?.title}</div>

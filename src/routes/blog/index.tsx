@@ -29,6 +29,7 @@ export default function Blogs() {
       />
       <Meta property="og:image" content={url + "/blog-hero.jpg"} />
       <Meta property="og:image:alt" content="Blog | DBS Mother's Choice" />
+      <Meta name="twitter:card" content="summary_large_image" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />
       <div class="hero">
         <ResponsiveImage class="hero-bg" alt="blog hero" src={blogHero} />

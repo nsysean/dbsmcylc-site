@@ -63,6 +63,7 @@ export default function About() {
       />
       <Meta property="og:image" content={url + "/about-hero.jpg"} />
       <Meta property="og:image:alt" content="About | DBS Mother's Choice" />
+      <Meta name="twitter:card" content="summary_large_image" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />{" "}
       <div class="hero">
         <ResponsiveImage class="hero-bg" alt="about hero" src={aboutHero} />
