@@ -74,8 +74,6 @@ export default function BlogLayout(props: RouteSectionProps) {
           property="og:image:alt"
           content={blog()?.title + " | Blog | DBS Mother's Choice"}
         />
-        <Meta property="og:image:width" content="1200" />
-        <Meta property="og:image:height" content="630" />
         <Meta property="og:site_name" content="DBS Mother's Choice" />
         <main class="p4">
           <div
@@ -87,6 +85,7 @@ export default function BlogLayout(props: RouteSectionProps) {
               <div class="frame2-title">{blog()?.title}</div>
               <div class="frame2-text">
                 {(blog()?.tags?.length ? "#" : "") + blog()?.tags?.join(" #")}
+                <br></br>
                 <br></br>
                 {blog()?.description}
               </div>

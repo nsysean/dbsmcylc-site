@@ -18,17 +18,15 @@ export default function Home() {
       <Meta property="og:url" content={url + "/"} />
       <link rel="canonical" href={url + "/"}></link>
       <Meta property="og:type" content="website" />
-      <Meta name="description" content="Landing page of DBS Mother's Choice." />
+      <Meta name="description" content="DBS Mother's Choice is part of the Youth Leadership Council for Mother's Choice, dedicated to spreading awareness." />
       <Meta name="robots" content="index, follow" />
       <Meta name="keywords" content="DBS, Mother's Choice, adoption, Home" />
       <Meta
         property="og:description"
-        content="Landing page of DBS Mother's Choice."
+        content="DBS Mother's Choice is part of the Youth Leadership Council for Mother's Choice, dedicated to spreading awareness."
       />
       <Meta property="og:image" content={url + "/home-hero.jpg"} />
       <Meta property="og:image:alt" content="Home | DBS Mother's Choice" />
-      <Meta property="og:image:width" content="1200" />
-      <Meta property="og:image:height" content="630" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />
       <div class="hero">
         <ResponsiveImage class="hero-bg" alt="home hero" src={homeHero} />

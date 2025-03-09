@@ -54,17 +54,15 @@ export default function About() {
       <Meta property="og:url" content={url + "/about"} />
       <link rel="canonical" href={url + "/about"}></link>
       <Meta property="og:type" content="website" />
-      <Meta name="description" content="About page of DBS Mother's Choice." />
+      <Meta name="description" content="The Diocesan Boys' School Mother's Choice Youth Leadership Council is part of a local charity in Hong Kong serving children without families and pregnant teens. We aim to promote awareness in related issues through self-initiated events." />
       <Meta name="robots" content="index, follow" />
       <Meta name="keywords" content="DBS, Mother's Choice, adoption, About" />
       <Meta
         property="og:description"
-        content="About page of DBS Mother's Choice."
+        content="The Diocesan Boys' School Mother's Choice Youth Leadership Council is part of a local charity in Hong Kong serving children without families and pregnant teens. We aim to promote awareness in related issues through self-initiated events."
       />
       <Meta property="og:image" content={url + "/about-hero.jpg"} />
       <Meta property="og:image:alt" content="About | DBS Mother's Choice" />
-      <Meta property="og:image:width" content="1200" />
-      <Meta property="og:image:height" content="630" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />{" "}
       <div class="hero">
         <ResponsiveImage class="hero-bg" alt="about hero" src={aboutHero} />

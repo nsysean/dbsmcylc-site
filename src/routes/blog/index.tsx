@@ -17,7 +17,7 @@ export default function Blogs() {
       <Meta property="og:url" content={url + "/blog"} />
       <link rel="canonical" href={url + "/blog"}></link>
       <Meta property="og:type" content="website" />
-      <Meta name="description" content="Blogs from DBS Mother's Choice." />
+      <Meta name="description" content="Read our meticulously crafted writings from the interviews, podcasts we've done to learn more about adoption." />
       <Meta name="robots" content="index, follow" />
       <Meta
         name="keywords"
@@ -25,12 +25,10 @@ export default function Blogs() {
       />
       <Meta
         property="og:description"
-        content="Blogs from DBS Mother's Choice."
+        content="Read our meticulously crafted writings from the interviews, podcasts we've done to learn more about adoption."
       />
       <Meta property="og:image" content={url + "/blog-hero.jpg"} />
       <Meta property="og:image:alt" content="Blog | DBS Mother's Choice" />
-      <Meta property="og:image:width" content="1200" />
-      <Meta property="og:image:height" content="630" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />
       <div class="hero">
         <ResponsiveImage class="hero-bg" alt="blog hero" src={blogHero} />
