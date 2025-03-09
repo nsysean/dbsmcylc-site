@@ -14,7 +14,7 @@ export default function Navbar() {
         }
       >
         <div class="nav-wrapper">
-          <a href="/" onclick={() => setCollapse(true)}>
+          <a class="nav-logo-parent" href="/" onclick={() => setCollapse(true)}>
             <img
               class="nav-logo"
               src="/logo-mc.svg"

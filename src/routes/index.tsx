@@ -11,6 +11,7 @@ export default function Home() {
       <Title>Home | DBS Mothers Choice</Title>
       <Meta property="og:title" content="Home | DBS Mothers Choice" />
       <Meta property="og:url" content={url + "/"} />
+      <link rel="canonical" href={url + "/"}></link>
       <Meta property="og:type" content="website" />
       <Meta
         property="og:description"

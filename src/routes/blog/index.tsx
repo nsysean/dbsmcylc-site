@@ -13,6 +13,7 @@ export default function Blogs() {
       <Title>Blog | DBS Mothers Choice</Title>
       <Meta property="og:title" content="Blog | DBS Mothers Choice" />
       <Meta property="og:url" content={url + "/blog"} />
+      <link rel="canonical" href={url + "/blog"}></link>
       <Meta property="og:type" content="website" />
       <Meta
         property="og:description"

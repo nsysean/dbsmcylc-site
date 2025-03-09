@@ -25,6 +25,7 @@ export default function About() {
       <Title>About | DBS Mothers Choice</Title>
       <Meta property="og:title" content="About | DBS Mothers Choice" />
       <Meta property="og:url" content={url + "/about"} />
+      <link rel="canonical" href={url + "/about"}></link>
       <Meta property="og:type" content="website" />
       <Meta
         property="og:description"

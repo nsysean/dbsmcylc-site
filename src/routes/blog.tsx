@@ -43,6 +43,7 @@ export default function BlogLayout(props: RouteSectionProps) {
           content={blog()?.title + " | Blog | DBS Mothers Choice"}
         />
         <Meta property="og:url" content={url + "/blog/" + blog()?.slug} />
+        <link rel="canonical" href={url + "/blog/" + blog()?.slug}></link>
         <Meta property="og:type" content="article" />
         <Meta
           property="og:article:published_time"
