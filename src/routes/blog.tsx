@@ -18,6 +18,7 @@ import {
 import blogs from "../content/blog";
 import { Meta, Title } from "@solidjs/meta";
 import { url } from "../content/config";
+import { ResponsiveImage } from "@responsive-image/solid";
 
 interface BlogPost {
   title: string;
@@ -45,12 +46,17 @@ export default function BlogLayout(props: RouteSectionProps) {
         <Meta property="og:url" content={url + "/blog/" + blog()?.slug} />
         <link rel="canonical" href={url + "/blog/" + blog()?.slug}></link>
         <Meta property="og:type" content="article" />
-        <Meta
-          name="description"
-          content={blog()?.description}
-        />
+        <Meta name="description" content={blog()?.description} />
         <Meta name="robots" content="index, follow" />
-        <Meta name="keywords" content={["DBS", "Mother's Choice", "adoption", ...(blog()?.tags ?? [])].join(", ")} />
+        <Meta
+          name="keywords"
+          content={[
+            "DBS",
+            "Mother's Choice",
+            "adoption",
+            ...(blog()?.tags ?? []),
+          ].join(", ")}
+        />
         <Meta
           property="og:article:published_time"
           content={blog()?.publishDate}
@@ -74,8 +80,8 @@ export default function BlogLayout(props: RouteSectionProps) {
         <main class="p4">
           <div
             class="hero"
-            style={"background-image: url(" + blog()?.thumbnail + ");"}
           >
+            <ResponsiveImage class="hero-bg" alt="blog hero" src={blog()?.image} />
             <div class="frame1"></div>
             <div class="frame2">
               <div class="frame2-title">{blog()?.title}</div>

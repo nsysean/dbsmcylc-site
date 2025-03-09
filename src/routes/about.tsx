@@ -2,19 +2,46 @@ import { For } from "solid-js";
 import "./about.css";
 import { Meta, Title } from "@solidjs/meta";
 import { url } from "../content/config";
+import teamBrandon from "../../public/team-brandon.jpg?responsive";
+import teamEugene from "../../public/team-eugene.jpg?responsive";
+import teamEvan from "../../public/team-evan.jpg?responsive";
+import teamJason from "../../public/team-jason.jpg?responsive";
+import teamJayden from "../../public/team-jayden.jpg?responsive";
+import teamBen from "../../public/team-ben.jpg?responsive";
+import teamSean from "../../public/team-sean.jpg?responsive";
+import teamErnest from "../../public/team-ernest.jpg?responsive";
+import teamJavan from "../../public/team-javan.jpg?responsive";
+import aboutHero from "../../public/about-hero.jpg?responsive";
+import { ResponsiveImage } from "@responsive-image/solid";
 
 const members = [
-  { name: "Brandon Lee", pfp: "team-brandon.webp", role: "Service Leader" },
-  { name: "Eugene Lau", pfp: "team-eugene.webp", role: "Vice Service Leader" },
-  { name: "Evan Chow", pfp: "team-evan.webp", role: "Vice Service Leader" },
-  { name: "Jason Ann", pfp: "team-jason.webp", role: "Host" },
-  { name: "Jayden Chan", pfp: "team-jayden.webp", role: "Host" },
-  { name: "Ben Kam", pfp: "team-ben.webp", role: "Host" },
-  { name: "Sean Ng", pfp: "team-sean.webp", role: "Editor/Cameraman" },
-  { name: "Ernest Lam", pfp: "team-ernest.webp", role: "Cameraman" },
+  {
+    name: "Brandon Lee",
+    pfp: teamBrandon,
+    role: "Service Leader",
+  },
+  {
+    name: "Eugene Lau",
+    pfp: teamEugene,
+    role: "Vice Service Leader",
+  },
+  {
+    name: "Evan Chow",
+    pfp: teamEvan,
+    role: "Vice Service Leader",
+  },
+  { name: "Jason Ann", pfp: teamJason, role: "Host" },
+  { name: "Jayden Chan", pfp: teamJayden, role: "Host" },
+  { name: "Ben Kam", pfp: teamBen, role: "Host" },
+  {
+    name: "Sean Ng",
+    pfp: teamSean,
+    role: "Editor/Cameraman",
+  },
+  { name: "Ernest Lam", pfp: teamErnest, role: "Cameraman" },
   {
     name: "Javan Yuen",
-    pfp: "team-javan.webp",
+    pfp: teamJavan,
     role: "Host/Social Media Manager",
   },
 ];
@@ -27,22 +54,20 @@ export default function About() {
       <Meta property="og:url" content={url + "/about"} />
       <link rel="canonical" href={url + "/about"}></link>
       <Meta property="og:type" content="website" />
-      <Meta
-        name="description"
-        content="About page of DBS Mother's Choice."
-      />
+      <Meta name="description" content="About page of DBS Mother's Choice." />
       <Meta name="robots" content="index, follow" />
       <Meta name="keywords" content="DBS, Mother's Choice, adoption, About" />
       <Meta
         property="og:description"
         content="About page of DBS Mother's Choice."
       />
-      <Meta property="og:image" content={url + "/about-hero.webp"} />
+      <Meta property="og:image" content={url + "/about-hero.jpg"} />
       <Meta property="og:image:alt" content="About | DBS Mother's Choice" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />{" "}
       <div class="hero">
+        <ResponsiveImage class="hero-bg" alt="about hero" src={aboutHero} />
         <div class="frame1"></div>
         <div class="frame2">
           <div class="frame2-title">About us</div>
@@ -61,7 +86,11 @@ export default function About() {
             {(member) => {
               return (
                 <div class="member">
-                  <img class="member-pfp" src={"/" + member.pfp}></img>
+                  <ResponsiveImage
+                    class="member-pfp"
+                    alt={member.name}
+                    src={member.pfp}
+                  />
                   <div class="member-name">{member.name}</div>
                   <div class="member-role">{member.role}</div>
                 </div>

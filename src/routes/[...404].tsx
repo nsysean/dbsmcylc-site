@@ -1,6 +1,8 @@
+import { ResponsiveImage } from "@responsive-image/solid";
 import "./404.css";
 import { Title } from "@solidjs/meta";
 import { HttpStatusCode } from "@solidjs/start";
+import notfoundHero from "../../public/404-hero.jpg?responsive"
 
 export default function NotFound() {
   return (
@@ -8,6 +10,7 @@ export default function NotFound() {
       <Title>Not Found</Title>
       <HttpStatusCode code={404} />
       <div class="hero">
+        <ResponsiveImage class="hero-bg" alt="404 hero" src={notfoundHero} />
         <div class="frame1"></div>
         <div class="frame2">
           <div class="frame2-title">Not Found</div>

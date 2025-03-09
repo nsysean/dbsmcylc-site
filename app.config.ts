@@ -1,5 +1,6 @@
 import { defineConfig } from "@solidjs/start/config";
 import pkg from "@vinxi/plugin-mdx";
+import { setupPlugins } from '@responsive-image/vite-plugin';
 
 const { default: mdx } = pkg;
 
@@ -12,6 +13,9 @@ export default defineConfig({
         jsx: true,
         jsxImportSource: "solid-js",
         providerImportSource: "solid-mdx",
+      }),
+      setupPlugins({
+        include: /^[^?]+\.jpg\?.*responsive.*$/,
       }),
     ],
   },

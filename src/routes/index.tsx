@@ -2,6 +2,11 @@ import "./index.css";
 import { Meta, Title } from "@solidjs/meta";
 import blogs from "../content/blog";
 import { url } from "../content/config";
+import { ResponsiveImage } from "@responsive-image/solid";
+import podcastImage from "../../public/podcast-thumbnail.jpg?responsive";
+import gameshowImage from "../../public/gameshow-thumbnail.jpg?responsive";
+import interviewImage from "../../public/interview-thumbnail.jpg?responsive";
+import homeHero from "../../public/home-hero.jpg?responsive";
 
 const blog = blogs[blogs.length - 1];
 
@@ -13,22 +18,20 @@ export default function Home() {
       <Meta property="og:url" content={url + "/"} />
       <link rel="canonical" href={url + "/"}></link>
       <Meta property="og:type" content="website" />
-      <Meta
-        name="description"
-        content="Landing page of DBS Mother's Choice."
-      />
+      <Meta name="description" content="Landing page of DBS Mother's Choice." />
       <Meta name="robots" content="index, follow" />
       <Meta name="keywords" content="DBS, Mother's Choice, adoption, Home" />
       <Meta
         property="og:description"
         content="Landing page of DBS Mother's Choice."
       />
-      <Meta property="og:image" content={url + "/home-hero.webp"} />
+      <Meta property="og:image" content={url + "/home-hero.jpg"} />
       <Meta property="og:image:alt" content="Home | DBS Mother's Choice" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
       <Meta property="og:site_name" content="DBS Mother's Choice" />
       <div class="hero">
+        <ResponsiveImage class="hero-bg" alt="home hero" src={homeHero} />
         <div class="frame1">
           <div class="frame1-text">
             <span class="highlight">
@@ -86,11 +89,11 @@ export default function Home() {
         </div>
         <div class="work">
           <a href="https://www.youtube.com/watch?v=36DKaJ4ayGQ" target="_blank">
-            <img
+            <ResponsiveImage
               class="work-thumbnail"
-              src="/podcast-thumbnail.webp"
+              src={podcastImage}
               alt="podcast-thumbnail"
-            ></img>
+            />
             <div class="work-title">Podcast</div>
             <div class="work-desc">
               How Adoption is Represented in Literature
@@ -99,11 +102,11 @@ export default function Home() {
         </div>
         <div class="work">
           <a href="https://www.youtube.com/shorts/Za1aJVe8cYw" target="_blank">
-            <img
+            <ResponsiveImage
               class="work-thumbnail"
-              src="/gameshow-thumbnail.webp"
+              src={gameshowImage}
               alt="gameshow-thumbnail"
-            ></img>
+            />
             <div class="work-title">Skit</div>
             <div class="work-desc">
               Who Wants To Be A Parent? — The Gameshow
@@ -112,11 +115,11 @@ export default function Home() {
         </div>{" "}
         <div class="work">
           <a href="https://www.youtube.com/shorts/Bv7PFLnqTdo" target="_blank">
-            <img
+            <ResponsiveImage
               class="work-thumbnail"
-              src="/interview-thumbnail.webp"
+              src={interviewImage}
               alt="interview-thumbnail"
-            ></img>
+            />
             <div class="work-title">Interview</div>
             <div class="work-desc">
               What Does It Take To Become A Good Adoptive Parent?
@@ -127,14 +130,14 @@ export default function Home() {
       <div class="preview">
         <a href={"/blog/" + blog.slug}>
           <div class="preview-wrapper">
-            <div
+            <ResponsiveImage
               class="preview-bg"
-              style={"background-image: url(" + blog.thumbnail + ");"}
-            >
-              <div class="preview-info">
-                <div class="preview-title">{blog.title}</div>
-                <div class="preview-desc">{blog.description}</div>
-              </div>
+              alt="blog preview"
+              src={blog.image}
+            />
+            <div class="preview-info">
+              <div class="preview-title">{blog.title}</div>
+              <div class="preview-desc">{blog.description}</div>
             </div>
           </div>
         </a>
