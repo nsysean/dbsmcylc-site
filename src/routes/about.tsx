@@ -22,20 +22,26 @@ const members = [
 export default function About() {
   return (
     <main class="p2">
-      <Title>About | DBS Mothers Choice</Title>
-      <Meta property="og:title" content="About | DBS Mothers Choice" />
+      <Title>About | DBS Mother's Choice</Title>
+      <Meta property="og:title" content="About | DBS Mother's Choice" />
       <Meta property="og:url" content={url + "/about"} />
       <link rel="canonical" href={url + "/about"}></link>
       <Meta property="og:type" content="website" />
       <Meta
+        property="description"
+        content="About page of DBS Mother's Choice."
+      />
+      <Meta name="robots" content="index, follow" />
+      <Meta name="keywords" content="DBS, Mother's Choice, adoption, About" />
+      <Meta
         property="og:description"
-        content="About page of DBS Mothers Choice."
+        content="About page of DBS Mother's Choice."
       />
       <Meta property="og:image" content={url + "/about-hero.webp"} />
-      <Meta property="og:image:alt" content="About | DBS Mothers Choice" />
+      <Meta property="og:image:alt" content="About | DBS Mother's Choice" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
-      <Meta property="og:site_name" content="DBS Mothers Choice" />{" "}
+      <Meta property="og:site_name" content="DBS Mother's Choice" />{" "}
       <div class="hero">
         <div class="frame1"></div>
         <div class="frame2">

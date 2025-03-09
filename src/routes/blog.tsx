@@ -37,19 +37,25 @@ export default function BlogLayout(props: RouteSectionProps) {
   return (
     <div>
       <Show when={props.location.pathname !== "/blog"}>
-        <Title>{blog()?.title} | Blog | DBS Mothers Choice</Title>
+        <Title>{blog()?.title} | Blog | DBS Mother's Choice</Title>
         <Meta
           property="og:title"
-          content={blog()?.title + " | Blog | DBS Mothers Choice"}
+          content={blog()?.title + " | Blog | DBS Mother's Choice"}
         />
         <Meta property="og:url" content={url + "/blog/" + blog()?.slug} />
         <link rel="canonical" href={url + "/blog/" + blog()?.slug}></link>
         <Meta property="og:type" content="article" />
         <Meta
+          property="description"
+          content={blog()?.description}
+        />
+        <Meta name="robots" content="index, follow" />
+        <Meta name="keywords" content={["DBS", "Mother's Choice", "adoption", ...(blog()?.tags ?? [])].join(", ")} />
+        <Meta
           property="og:article:published_time"
           content={blog()?.publishDate}
         />
-        <Meta property="og:article:author" content="DBS Mothers Choice" />
+        <Meta property="og:article:author" content="DBS Mother's Choice" />
         <Meta property="og:article:section" content="Adoption" />
         <For each={blog()?.tags}>
           {(tag) => {
@@ -60,11 +66,11 @@ export default function BlogLayout(props: RouteSectionProps) {
         <Meta property="og:image" content={url + blog()?.thumbnail} />
         <Meta
           property="og:image:alt"
-          content={blog()?.title + " | Blog | DBS Mothers Choice"}
+          content={blog()?.title + " | Blog | DBS Mother's Choice"}
         />
         <Meta property="og:image:width" content="1200" />
         <Meta property="og:image:height" content="630" />
-        <Meta property="og:site_name" content="DBS Mothers Choice" />
+        <Meta property="og:site_name" content="DBS Mother's Choice" />
         <main class="p4">
           <div
             class="hero"

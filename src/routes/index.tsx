@@ -8,20 +8,26 @@ const blog = blogs[blogs.length - 1];
 export default function Home() {
   return (
     <main class="p1">
-      <Title>Home | DBS Mothers Choice</Title>
-      <Meta property="og:title" content="Home | DBS Mothers Choice" />
+      <Title>Home | DBS Mother's Choice</Title>
+      <Meta property="og:title" content="Home | DBS Mother's Choice" />
       <Meta property="og:url" content={url + "/"} />
       <link rel="canonical" href={url + "/"}></link>
       <Meta property="og:type" content="website" />
       <Meta
+        property="description"
+        content="Landing page of DBS Mother's Choice."
+      />
+      <Meta name="robots" content="index, follow" />
+      <Meta name="keywords" content="DBS, Mother's Choice, adoption, Home" />
+      <Meta
         property="og:description"
-        content="Landing page of DBS Mothers Choice."
+        content="Landing page of DBS Mother's Choice."
       />
       <Meta property="og:image" content={url + "/home-hero.webp"} />
-      <Meta property="og:image:alt" content="Home | DBS Mothers Choice" />
+      <Meta property="og:image:alt" content="Home | DBS Mother's Choice" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
-      <Meta property="og:site_name" content="DBS Mothers Choice" />
+      <Meta property="og:site_name" content="DBS Mother's Choice" />
       <div class="hero">
         <div class="frame1">
           <div class="frame1-text">

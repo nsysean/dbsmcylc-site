@@ -10,20 +10,26 @@ import { url } from "../../content/config";
 export default function Blogs() {
   return (
     <main class="p5">
-      <Title>Blog | DBS Mothers Choice</Title>
-      <Meta property="og:title" content="Blog | DBS Mothers Choice" />
+      <Title>Blog | DBS Mother's Choice</Title>
+      <Meta property="og:title" content="Blog | DBS Mother's Choice" />
       <Meta property="og:url" content={url + "/blog"} />
       <link rel="canonical" href={url + "/blog"}></link>
       <Meta property="og:type" content="website" />
       <Meta
+        property="description"
+        content="Blogs from DBS Mother's Choice."
+      />
+      <Meta name="robots" content="index, follow" />
+      <Meta name="keywords" content="DBS, Mother's Choice, adoption, blogs, blog" />
+      <Meta
         property="og:description"
-        content="Blogs from DBS Mothers Choice."
+        content="Blogs from DBS Mother's Choice."
       />
       <Meta property="og:image" content={url + "/blog-hero.webp"} />
-      <Meta property="og:image:alt" content="Blog | DBS Mothers Choice" />
+      <Meta property="og:image:alt" content="Blog | DBS Mother's Choice" />
       <Meta property="og:image:width" content="1200" />
       <Meta property="og:image:height" content="630" />
-      <Meta property="og:site_name" content="DBS Mothers Choice" />
+      <Meta property="og:site_name" content="DBS Mother's Choice" />
       <div class="hero">
         <div class="frame1"></div>
         <div class="frame2">
