@@ -68,7 +68,7 @@ export default function Home() {
           <a href="https://www.youtube.com/watch?v=36DKaJ4ayGQ" target="_blank">
             <img
               class="work-thumbnail"
-              src="/podcast-thumbnail.jpg"
+              src="/podcast-thumbnail.webp"
             ></img>
             <div class="work-title">Podcast</div>
             <div class="work-desc">
@@ -80,7 +80,7 @@ export default function Home() {
           <a href="https://www.youtube.com/shorts/Za1aJVe8cYw" target="_blank">
             <img
               class="work-thumbnail"
-              src="/gameshow-thumbnail.jpeg"
+              src="/gameshow-thumbnail.webp"
             ></img>
             <div class="work-title">Skit</div>
             <div class="work-desc">
@@ -92,7 +92,7 @@ export default function Home() {
           <a href="https://www.youtube.com/shorts/Bv7PFLnqTdo" target="_blank">
             <img
               class="work-thumbnail"
-              src="/interview-thumbnail.jpeg"
+              src="/interview-thumbnail.webp"
             ></img>
             <div class="work-title">Interview</div>
             <div class="work-desc">

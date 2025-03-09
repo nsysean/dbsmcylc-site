@@ -3,17 +3,17 @@ import "./about.css";
 import { Title } from "@solidjs/meta";
 
 const members = [
-  { name: "Brandon Lee", pfp: "team-brandon.png", role: "Service Leader" },
-  { name: "Eugene Lau", pfp: "team-eugene.png", role: "Vice Service Leader" },
-  { name: "Evan Chow", pfp: "team-evan.png", role: "Vice Service Leader" },
-  { name: "Jason Ann", pfp: "team-jason.png", role: "Host" },
-  { name: "Jayden Chan", pfp: "team-jayden.png", role: "Host" },
-  { name: "Ben Kam", pfp: "team-ben.jpg", role: "Host" },
+  { name: "Brandon Lee", pfp: "team-brandon.webp", role: "Service Leader" },
+  { name: "Eugene Lau", pfp: "team-eugene.webp", role: "Vice Service Leader" },
+  { name: "Evan Chow", pfp: "team-evan.webp", role: "Vice Service Leader" },
+  { name: "Jason Ann", pfp: "team-jason.webp", role: "Host" },
+  { name: "Jayden Chan", pfp: "team-jayden.webp", role: "Host" },
+  { name: "Ben Kam", pfp: "team-ben.webp", role: "Host" },
   { name: "Sean Ng", pfp: "team-sean.webp", role: "Editor/Cameraman" },
-  { name: "Ernest Lam", pfp: "team-ernest.png", role: "Cameraman" },
+  { name: "Ernest Lam", pfp: "team-ernest.webp", role: "Cameraman" },
   {
     name: "Javan Yuen",
-    pfp: "team-javan.png",
+    pfp: "team-javan.webp",
     role: "Host/Social Media Manager",
   },
 ];
