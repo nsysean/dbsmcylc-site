@@ -28,7 +28,7 @@ export default function About() {
       <link rel="canonical" href={url + "/about"}></link>
       <Meta property="og:type" content="website" />
       <Meta
-        property="description"
+        name="description"
         content="About page of DBS Mother's Choice."
       />
       <Meta name="robots" content="index, follow" />

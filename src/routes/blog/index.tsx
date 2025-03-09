@@ -16,7 +16,7 @@ export default function Blogs() {
       <link rel="canonical" href={url + "/blog"}></link>
       <Meta property="og:type" content="website" />
       <Meta
-        property="description"
+        name="description"
         content="Blogs from DBS Mother's Choice."
       />
       <Meta name="robots" content="index, follow" />

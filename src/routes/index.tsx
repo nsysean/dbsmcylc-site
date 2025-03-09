@@ -14,7 +14,7 @@ export default function Home() {
       <link rel="canonical" href={url + "/"}></link>
       <Meta property="og:type" content="website" />
       <Meta
-        property="description"
+        name="description"
         content="Landing page of DBS Mother's Choice."
       />
       <Meta name="robots" content="index, follow" />

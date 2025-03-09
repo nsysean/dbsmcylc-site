@@ -46,7 +46,7 @@ export default function BlogLayout(props: RouteSectionProps) {
         <link rel="canonical" href={url + "/blog/" + blog()?.slug}></link>
         <Meta property="og:type" content="article" />
         <Meta
-          property="description"
+          name="description"
           content={blog()?.description}
         />
         <Meta name="robots" content="index, follow" />
