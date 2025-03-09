@@ -44,6 +44,8 @@
 
   .nav-btn-highlight {
     background-color: var(--color-mc);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+
     border-radius: 3px;
     margin-left: 15px;
   }
