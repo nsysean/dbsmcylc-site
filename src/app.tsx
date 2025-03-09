@@ -11,7 +11,6 @@ export default function App() {
     <Router
       root={(props) => (
         <MetaProvider>
-          <Title>SolidStart - Basic</Title>
           <Navbar></Navbar>
           <Suspense>{props.children}</Suspense>
           <Footer></Footer>

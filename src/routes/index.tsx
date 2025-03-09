@@ -1,13 +1,26 @@
 import "./index.css";
-import { Title } from "@solidjs/meta";
+import { Meta, Title } from "@solidjs/meta";
 import blogs from "../content/blog";
+import { url } from "../content/config";
 
 const blog = blogs[blogs.length - 1];
 
 export default function Home() {
   return (
     <main class="p1">
-      <Title>Hello World</Title>
+      <Title>Home | DBS Mothers Choice</Title>
+      <Meta property="og:title" content="Home | DBS Mothers Choice" />
+      <Meta property="og:url" content={url + "/"} />
+      <Meta property="og:type" content="website" />
+      <Meta
+        property="og:description"
+        content="Landing page of DBS Mothers Choice."
+      />
+      <Meta property="og:image" content={url + "/home-hero.webp"} />
+      <Meta property="og:image:alt" content="Home | DBS Mothers Choice" />
+      <Meta property="og:image:width" content="1200" />
+      <Meta property="og:image:height" content="630" />
+      <Meta property="og:site_name" content="DBS Mothers Choice" />
       <div class="hero">
         <div class="frame1">
           <div class="frame1-text">
@@ -26,7 +39,7 @@ export default function Home() {
               dedicated to spreading awareness.
             </span>
             <div class="frame2-btn">
-              <a href="/about">Learn more</a>
+              <a href="/about">More about us</a>
             </div>
           </div>
         </div>
@@ -69,6 +82,7 @@ export default function Home() {
             <img
               class="work-thumbnail"
               src="/podcast-thumbnail.webp"
+              alt="podcast-thumbnail"
             ></img>
             <div class="work-title">Podcast</div>
             <div class="work-desc">
@@ -81,6 +95,7 @@ export default function Home() {
             <img
               class="work-thumbnail"
               src="/gameshow-thumbnail.webp"
+              alt="gameshow-thumbnail"
             ></img>
             <div class="work-title">Skit</div>
             <div class="work-desc">
@@ -93,6 +108,7 @@ export default function Home() {
             <img
               class="work-thumbnail"
               src="/interview-thumbnail.webp"
+              alt="interview-thumbnail"
             ></img>
             <div class="work-title">Interview</div>
             <div class="work-desc">

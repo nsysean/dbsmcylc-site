@@ -28,14 +28,16 @@ export default function Footer() {
             <a
               href="https://www.instagram.com/dbsmotherschoice/"
               target="_blank"
+              aria-label="instagram"
             >
-              <img class="social" src="/instagram.svg" />
+              <img class="social" src="/instagram.svg" alt="instagram" />
             </a>
             <a
               href="https://www.youtube.com/@dbsxmcylc"
               target="_blank"
+              aria-label="youtube"
             >
-              <img class="social" src="/youtube.svg" />
+              <img class="social" src="/youtube.svg" alt="youtube" />
             </a>
           </div>
         </div>

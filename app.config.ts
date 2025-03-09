@@ -5,6 +5,8 @@ const { default: mdx } = pkg;
 
 export default defineConfig({
   vite: {
+    optimizeDeps: { exclude: ["fsevents"] },
+
     plugins: [
       mdx.withImports({})({
         jsx: true,

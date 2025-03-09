@@ -24,10 +24,10 @@ export default function Navbar() {
           <div class="nav-group">
             <div class="nav-burger" onclick={() => setCollapse(!collapse())}>
               <Show when={collapse() === false}>
-                <img src="/close.svg" />
+                <img src="/close.svg" alt="close nav" />
               </Show>
               <Show when={collapse()}>
-                <img src="/menu.svg" />
+                <img src="/menu.svg" alt="open nav" />
               </Show>
             </div>
             <div class="nav-btns">

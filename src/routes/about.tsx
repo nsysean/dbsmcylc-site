@@ -1,6 +1,7 @@
 import { For } from "solid-js";
 import "./about.css";
-import { Title } from "@solidjs/meta";
+import { Meta, Title } from "@solidjs/meta";
+import { url } from "../content/config";
 
 const members = [
   { name: "Brandon Lee", pfp: "team-brandon.webp", role: "Service Leader" },
@@ -21,7 +22,19 @@ const members = [
 export default function About() {
   return (
     <main class="p2">
-      <Title>About</Title>
+      <Title>About | DBS Mothers Choice</Title>
+      <Meta property="og:title" content="About | DBS Mothers Choice" />
+      <Meta property="og:url" content={url + "/about"} />
+      <Meta property="og:type" content="website" />
+      <Meta
+        property="og:description"
+        content="About page of DBS Mothers Choice."
+      />
+      <Meta property="og:image" content={url + "/about-hero.webp"} />
+      <Meta property="og:image:alt" content="About | DBS Mothers Choice" />
+      <Meta property="og:image:width" content="1200" />
+      <Meta property="og:image:height" content="630" />
+      <Meta property="og:site_name" content="DBS Mothers Choice" />{" "}
       <div class="hero">
         <div class="frame1"></div>
         <div class="frame2">
