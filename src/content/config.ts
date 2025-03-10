@@ -1,2 +1,2 @@
-const url = "https://mc.chall.mov";
+const url = "https://dbsmotherschoice.com";
 export { url };
