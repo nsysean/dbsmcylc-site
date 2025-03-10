@@ -136,7 +136,7 @@ export default function Home() {
             />
             <div class="preview-info">
               <div class="preview-title">{blog.title}</div>
-              <div class="preview-desc">{blog.description}</div>
+              <div class="preview-desc">{blog.description.split(" ").length > 20 ? blog.description.split(" ").slice(0, 20).join(" ") + "..." : blog.description}</div>
             </div>
           </div>
         </a>
