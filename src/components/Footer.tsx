@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
         <div class="frame4">
-          © 2025 Diocesan Boys' School. All Right Reserved.
+          © 2025 Diocesan Boys' School. All Rights Reserved.
         </div>
       </div>
     </main>
