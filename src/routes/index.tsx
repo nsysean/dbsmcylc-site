@@ -18,12 +18,15 @@ export default function Home() {
       <Meta property="og:url" content={url + "/"} />
       <link rel="canonical" href={url + "/"}></link>
       <Meta property="og:type" content="website" />
-      <Meta name="description" content="DBS Mother's Choice is part of the Youth Leadership Council for Mother's Choice, dedicated to spreading awareness." />
+      <Meta
+        name="description"
+        content="DBS Mother's Choice Youth Leadership Council is a part of Mother's Choice, dedicated to spreading awareness through media."
+      />
       <Meta name="robots" content="index, follow" />
       <Meta name="keywords" content="DBS, Mother's Choice, adoption, Home" />
       <Meta
         property="og:description"
-        content="DBS Mother's Choice is part of the Youth Leadership Council for Mother's Choice, dedicated to spreading awareness."
+        content="DBS Mother's Choice Youth Leadership Council is a part of Mother's Choice, dedicated to spreading awareness through media."
       />
       <Meta property="og:image" content={url + "/home-hero.jpg"} />
       <Meta property="og:image:alt" content="Home | DBS Mother's Choice" />
@@ -43,9 +46,10 @@ export default function Home() {
           <div class="frame2-title">About</div>
           <div class="frame2-text">
             <span>
-              We are part of the Youth Leadership Council for Mother's Choice,
+              DBS Mother's Choice Youth Leadership Council is a part of Mother's
+              Choice,
               <br></br>
-              dedicated to spreading awareness.
+              dedicated to spreading awareness through media.
             </span>
             <div class="frame2-btn">
               <a href="/about">More about us</a>
@@ -136,7 +140,11 @@ export default function Home() {
             />
             <div class="preview-info">
               <div class="preview-title">{blog.title}</div>
-              <div class="preview-desc">{blog.description.split(" ").length > 20 ? blog.description.split(" ").slice(0, 20).join(" ") + "..." : blog.description}</div>
+              <div class="preview-desc">
+                {blog.description.split(" ").length > 20
+                  ? blog.description.split(" ").slice(0, 20).join(" ") + "..."
+                  : blog.description}
+              </div>
             </div>
           </div>
         </a>
