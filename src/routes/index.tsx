@@ -46,10 +46,7 @@ export default function Home() {
           <div class="frame2-title">About</div>
           <div class="frame2-text">
             <span>
-              DBS Mother's Choice Youth Leadership Council is a part of Mother's
-              Choice,
-              <br></br>
-              dedicated to spreading awareness through media.
+              DBS Mother's Choice Youth Leadership Council is a part of Mother's Choice, dedicated to spreading awareness through media.
             </span>
             <div class="frame2-btn">
               <a href="/about">More about us</a>

@@ -2,15 +2,13 @@
   background-color: #fff;
 
   .hero {
-    height: 700px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    position: relative;
   }
 
   .hero-bg {
     position: absolute;
-    height: 700px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
@@ -46,15 +44,18 @@
 
     .frame2-title {
       color: #c5c5c5;
+      padding-right: 10px;
     }
 
     .frame2-text {
+      max-width: 700px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     .frame2-text span {
+      padding-bottom: 20px;
       font-size: 20px;
       text-align: end;
     }
