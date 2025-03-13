@@ -64,7 +64,7 @@ export default function Home() {
           <div class="card-desc">Average views per video</div>
         </div>{" "}
         <div class="card">
-          <div class="card-title">7,000+</div>
+          <div class="card-title">10k+</div>
           <div class="card-desc">Views on social media</div>
         </div>{" "}
         <div class="card">
