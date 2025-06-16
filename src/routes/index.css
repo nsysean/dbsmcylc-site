@@ -76,12 +76,12 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 75px;
-    padding-block: 60px;
+    padding-block: 75px;
   }
 
   .card {
     .card-title {
-      font-size: 45px;
+      font-size: 60px;
     }
   }
 
@@ -124,15 +124,17 @@
 
     .work {
       .work-title {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 500;
         margin-block: 5px;
       }
 
       .work-thumbnail {
         width: 100%;
-        height: 350px;
+        height: 400px;
         object-fit: cover;
+        filter: brightness(70%) contrast(70%) saturate(0%) sepia(40%)
+          saturate(300%) hue-rotate(315deg);
       }
     }
   }
@@ -211,7 +213,7 @@
     }
 
     .works {
-        padding-inline: 25px;
+      padding-inline: 25px;
     }
 
     .preview {
