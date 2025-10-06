@@ -12,38 +12,47 @@ import teamSean from "../../public/team-sean.jpg?responsive";
 import teamErnest from "../../public/team-ernest.jpg?responsive";
 import teamJavan from "../../public/team-javan.jpg?responsive";
 import aboutHero from "../../public/about-hero.jpg?responsive";
+
+import teamAdrien from "../../public/team-adrien.jpg?responsive";
+import teamDavid from "../../public/team-david.jpg?responsive";
+import teamAntonio from "../../public/team-antonio.jpg?responsive";
+import teamMA from "../../public/team-ma.jpg?responsive";
+import teamHanson from "../../public/team-hanson.jpg?responsive";
+import teamWallace from "../../public/team-wallace.jpg?responsive";
+import teamAnson from "../../public/team-anson.jpg?responsive";
 import { ResponsiveImage } from "@responsive-image/solid";
 
 const members = [
   {
-    name: "Brandon Lee",
-    pfp: teamBrandon,
+    name: "Jason Ann",
+    pfp: teamJason,
     role: "Service Leader",
   },
   {
-    name: "Eugene Lau",
-    pfp: teamEugene,
+    name: "Javan Yuen",
+    pfp: teamJavan,
     role: "Vice Service Leader",
   },
-  {
-    name: "Evan Chow",
-    pfp: teamEvan,
-    role: "Vice Service Leader",
-  },
-  { name: "Jason Ann", pfp: teamJason, role: "Host" },
-  { name: "Jayden Chan", pfp: teamJayden, role: "Host" },
-  { name: "Ben Kam", pfp: teamBen, role: "Host" },
   {
     name: "Sean Ng",
     pfp: teamSean,
-    role: "Editor/Cameraman",
+    role: "Vice Service Leader",
   },
-  { name: "Ernest Lam", pfp: teamErnest, role: "Cameraman" },
+  { name: "Adrien Li", pfp: teamAdrien, role: "Service Member" },
+  { name: "David Huen", pfp: teamDavid, role: "Service Member" },
+  { name: "Antonio Ting", pfp: teamAntonio, role: "Service Member" },
   {
-    name: "Javan Yuen",
-    pfp: teamJavan,
-    role: "Host/Social Media Manager",
+    name: "Marc-Andre Noel",
+    pfp: teamMA,
+    role: "Service Member",
   },
+  { name: "Hanson Ko", pfp: teamHanson, role: "Service Member" },
+  {
+    name: "Wallace Tong",
+    pfp: teamWallace,
+    role: "Service Member",
+  },
+  { name: "Anson Lee", pfp: teamAnson, role: "Service Member" },
 ];
 
 export default function About() {
@@ -54,7 +63,10 @@ export default function About() {
       <Meta property="og:url" content={url + "/about"} />
       <link rel="canonical" href={url + "/about"}></link>
       <Meta property="og:type" content="website" />
-      <Meta name="description" content="The Diocesan Boys' School Mother's Choice Youth Leadership Council is part of a local charity in Hong Kong serving children without families and pregnant teens. We aim to promote awareness in related issues through self-initiated events." />
+      <Meta
+        name="description"
+        content="The Diocesan Boys' School Mother's Choice Youth Leadership Council is part of a local charity in Hong Kong serving children without families and pregnant teens. We aim to promote awareness in related issues through self-initiated events."
+      />
       <Meta name="robots" content="index, follow" />
       <Meta name="keywords" content="DBS, Mother's Choice, adoption, About" />
       <Meta
